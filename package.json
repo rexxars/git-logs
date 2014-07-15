@@ -1,0 +1,22 @@
+{
+  "name": "git-logs",
+  "version": "0.1.0",
+  "description": "Extracts git logs from repositories",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "git",
+    "log",
+    "recursive"
+  ],
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dateformat": "^1.0.8-1.2.3",
+    "param-case": "^0.1.0",
+    "shell-escape": "^0.1.0",
+    "split": "^0.3.0",
+    "through": "^2.3.4",
+    "walkdir": "0.0.7"
+  }
+}
