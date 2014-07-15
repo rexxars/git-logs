@@ -9,6 +9,11 @@
     "log",
     "recursive"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rexxars/git-logs.git"
+  },
+  "homepage": "https://github.com/rexxars/git-logs",
   "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
   "license": "MIT",
   "dependencies": {
