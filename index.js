@@ -55,7 +55,7 @@ function findGitRepos(dir, options, callback) {
     });
 
     walker.on('directory', function(path) {
-        if (!path.match(/\.git$/)) {
+        if (!path.match(/(\.git|refs)$/)) {
             return;
         }
 
