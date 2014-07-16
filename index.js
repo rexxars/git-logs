@@ -93,11 +93,11 @@ function getGitLog(repo, options, callback) {
         args.push('--' + paramCase(flag) + '=' + shellEscape(options[flag]));
     });
 
-    // Booleans - who knows if we'll need these or if they even work *shrugs*
+    // Booleans - who knows if we'll need all these or if they even work *shrugs*
     ['follow', 'source', 'regexpIgnoreCase', 'allMatch', 'extendedRegexp',
      'fixedStrings', 'perlRegexp', 'removeEmpty', 'merges', 'noMerges',
      'firstParent', 'all', 'ignoreMissing', 'leftOnly', 'rightOnly',
-     'boundary'].forEach(function(flag) {
+     'boundary', 'reverse'].forEach(function(flag) {
         if (!options[flag]) { return; }
         args.push('--' + paramCase(flag));
     });
